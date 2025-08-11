@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced HTML5 Content & Form</title>
+  
+</head>
+<body>
+
+  <header>
+    <h1>HTML5 Content & Form Showcase</h1>
+    <p>This page demonstrates advanced HTML5 features including structured content, embedded media and a fully validated form covered in week 2.</p>
+  </header>
+
+  <section>
+    <h2> Programming Languages I Use</h2>
+    <ul>
+      <li>Python – for backend and automation</li>
+      <li>JavaScript – for frontend interactivity</li>
+      <li>Java – for enterprise solutions</li>
+      <li>C++ – for performance-critical applications</li>
+      <li>SQL – for database management</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2> Weekly Learning Schedule</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Topic</th>
+          <th>Hours</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>Frontend (React.js)</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>Backend (Django)</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>UI/UX Design</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>Cloud Deployment</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>Project Building</td>
+          <td>5</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2> Media Showcase</h2>
+    <figure>
+      <img src="https://images.pexels.com/photos/33305403/pexels-photo-33305403.jpeg" alt="Table in Restaurant" width="300" height="300"/>
+      <figcaption>Sample coding workspace image</figcaption>
+    </figure>
+
+    <audio controls>
+      <source src="audio.mp3.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <style>
+  .responsive-video {
+    max-width: 30%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+</style>
+
+<video class="responsive-video" controls>
+  <source src="https://videos.pexels.com/video-files/32992748/14060888_2560_1440_30fps.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+  
+  </section>
+
+  <section>
+    <h2> Registration Form</h2>
+    <form action="#" method="post" autocomplete="on">
+      
+      <fieldset>
+        <legend>Personal Details</legend>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="John Doe" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com" />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="0712345678" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Setup</legend>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required pattern="[a-zA-Z0-9]{5,}" placeholder="Minimum 5 characters" />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="8" placeholder="At least 8 characters" />
+
+        <label for="confirm">Confirm Password:</label>
+        <input type="password" id="confirm" name="confirm" required minlength="8" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <label for="language">Preferred Language:</label>
+        <select id="language" name="language" required>
+          <option value="">--Select--</option>
+          <option value="python">Python</option>
+          <option value="javascript">JavaScript</option>
+          <option value="java">Java</option>
+          <option value="c++">C++</option>
+        </select>
+
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="bio" rows="4" maxlength="300" placeholder="Tell us about yourself..."></textarea>
+
+        <label for="referral">Referral Code:</label>
+        <input type="text" id="referral" name="referral" readonly value="HTML5-2025" />
+
+        <label>
+          <input type="checkbox" name="terms" required />
+          I agree to the terms and conditions
+        </label>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HTML5 . All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
